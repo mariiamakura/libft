@@ -34,6 +34,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	return (dst);
 }
 
+//needs more work
+
 /* int main (void)
 {
    unsigned char src[] = "aaaaa";
