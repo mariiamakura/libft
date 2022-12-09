@@ -6,7 +6,7 @@
 /*   By: mparasku <mparasku@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/30 17:31:12 by mparasku          #+#    #+#             */
-/*   Updated: 2022/12/09 14:21:59 by mparasku         ###   ########.fr       */
+/*   Updated: 2022/12/09 16:38:10 by mparasku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ size_t	ft_strlen(const char *s)
 	return (i);
 }
 
-int main()
+/* int main()
 {
     printf("%zu\n", ft_strlen("Hello"));
 	return (0);
-}
+} */

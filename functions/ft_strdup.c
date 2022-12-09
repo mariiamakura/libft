@@ -6,15 +6,15 @@
 /*   By: mparasku <mparasku@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/07 16:44:29 by mparasku          #+#    #+#             */
-/*   Updated: 2022/12/07 17:35:23 by mparasku         ###   ########.fr       */
+/*   Updated: 2022/12/09 16:33:28 by mparasku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
-	char *p;
+	char	*p;
 
 	p = malloc((ft_strlen(s) + 1) * sizeof(char));
 	if (p == 0)

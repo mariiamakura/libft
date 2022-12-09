@@ -6,7 +6,7 @@
 /*   By: mparasku <mparasku@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 14:14:22 by mparasku          #+#    #+#             */
-/*   Updated: 2022/12/06 14:49:59 by mparasku         ###   ########.fr       */
+/*   Updated: 2022/12/09 16:49:50 by mparasku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_tolower(int c)
 	return (c);
 }
 
-int main()
+/* int main()
 {
 	printf("%c\n", ft_tolower('G'));
-}
+} */
