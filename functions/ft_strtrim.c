@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mishamakura <mishamakura@student.42.fr>    +#+  +:+       +#+        */
+/*   By: mparasku <mparasku@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/08 15:07:32 by mishamakura       #+#    #+#             */
-/*   Updated: 2022/12/08 18:23:40 by mishamakura      ###   ########.fr       */
+/*   Updated: 2022/12/09 13:22:17 by mparasku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
