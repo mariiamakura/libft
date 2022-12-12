@@ -6,7 +6,7 @@
 /*   By: mparasku <mparasku@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/07 17:58:48 by mparasku          #+#    #+#             */
-/*   Updated: 2022/12/07 19:22:54 by mparasku         ###   ########.fr       */
+/*   Updated: 2022/12/12 19:06:01 by mparasku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,20 +15,21 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	i;
+	size_t	max_len;
 	char	*p;
 
+	max_len = len;
 	if (!s)
 		return (0);
-	p = malloc((len + 1) * sizeof(*s));
-	if (p == 0)
-		return (0);
+	if (len >= ft_strlen(s))
+		max_len = ft_strlen(s) - start;
 	if (start > ft_strlen(s))
-	{
-		*p = 0;
-		return (p);
-	}
+		return (ft_strdup(""));
+	p = malloc((max_len + 1) * sizeof(char));
+	if (!p)
+		return (0);
 	i = 0;
-	while (i < len)
+	while (i < max_len)
 	{
 		*(p + i) = *(s + start + i);
 		i++;
@@ -39,6 +40,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 /* int main()
 {
-	char word[] = "Hello!";
-	printf("%s\n", ft_substr(word, 1, 9));
+	char * s = "";
+	printf("%s\n", ft_substr(s, 1, 1));
 } */

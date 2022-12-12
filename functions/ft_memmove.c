@@ -6,7 +6,7 @@
 /*   By: mparasku <mparasku@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/05 14:35:59 by mparasku          #+#    #+#             */
-/*   Updated: 2022/12/09 18:06:23 by mparasku         ###   ########.fr       */
+/*   Updated: 2022/12/12 13:03:09 by mparasku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,11 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	unsigned char	temp[sizeof((unsigned char *)src)];
 	size_t			i;
+	unsigned char	*temp;
 
 	i = 0;
+	temp = malloc(ft_strlen(src) * sizeof(char));
 	if (!dst || !src)
 		return (0);
 	while (i < len)
@@ -34,14 +35,12 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	return (dst);
 }
 
-//needs more work
-
 /* int main (void)
 {
    unsigned char src[] = "aaaaa";
-   unsigned char dest[] = "";
+   unsigned char dest[] = "bbb";
 
-memmove(dest, src, 34); 
+	memmove(dest, src, 34);
 printf("function: %s\n",dest); 
 ft_memmove(dest, src, 3);
 printf("mine: %s\n",dest);

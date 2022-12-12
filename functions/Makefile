@@ -6,7 +6,7 @@
 #    By: mparasku <mparasku@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/09 13:35:38 by mparasku          #+#    #+#              #
-#    Updated: 2022/12/09 17:40:35 by mparasku         ###   ########.fr        #
+#    Updated: 2022/12/12 15:16:54 by mparasku         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,3 +45,5 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+
+.PHONY: all clean fclean re so

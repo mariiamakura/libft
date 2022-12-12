@@ -6,7 +6,7 @@
 /*   By: mparasku <mparasku@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/08 15:07:32 by mishamakura       #+#    #+#             */
-/*   Updated: 2022/12/09 13:22:17 by mparasku         ###   ########.fr       */
+/*   Updated: 2022/12/12 13:23:30 by mparasku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 /* int main ()
 {
     char sen[] = "Hello";
-    char set[] = "Ho";
+    char set[] = "eH";
     printf("%s\n", ft_strtrim(sen, set));
 } */

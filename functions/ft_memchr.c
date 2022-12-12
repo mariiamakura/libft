@@ -6,7 +6,7 @@
 /*   By: mparasku <mparasku@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 16:01:19 by mparasku          #+#    #+#             */
-/*   Updated: 2022/12/06 16:30:16 by mparasku         ###   ########.fr       */
+/*   Updated: 2022/12/12 16:19:42 by mparasku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,25 +14,22 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	size_t		i;
-	const char	*str;
+	size_t	i;
 
 	i = 0;
-	str = s;
-	while (str[i] && n > 0)
+	while (i < n)
 	{
-		if (str[i] == c)
-			return ((void *)str + i);
+		if (((unsigned char *)s)[i] == (unsigned char)c)
+			return ((void *)(s + i));
 		i++;
-		n--;
 	}
 	return (0);
 }
 
 /* int main()
 {
-	char c = 'a';
-	char word[] = "hallo";
-	printf("function: %p\n", memchr(word, c, 4));
-	printf("mine: %p\n", ft_memchr(word, c, 4));
+	int tab[7] = {-49, 49, 1, -1, 0, -2, 2};
+	printf("%s\n", (char *)memchr(tab, -1, 7));
+    printf("%s\n", (char *)ft_memchr(tab, -1, 7));
+
 } */
