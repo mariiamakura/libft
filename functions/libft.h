@@ -6,7 +6,7 @@
 /*   By: mparasku <mparasku@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/05 15:29:00 by mparasku          #+#    #+#             */
-/*   Updated: 2022/12/09 16:48:47 by mparasku         ###   ########.fr       */
+/*   Updated: 2022/12/13 14:18:56 by mparasku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ int		ft_isascii(int c);
 int		ft_isdigit(int c);
 int		ft_isprint(int c);
 int		ft_toupper(int c);
+int		ft_tolower(int c);
 
 //stdlib.h
 int		ft_atoi(const char *str);

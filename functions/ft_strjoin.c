@@ -6,7 +6,7 @@
 /*   By: mparasku <mparasku@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/07 19:24:03 by mparasku          #+#    #+#             */
-/*   Updated: 2022/12/07 19:44:31 by mparasku         ###   ########.fr       */
+/*   Updated: 2022/12/13 13:24:25 by mparasku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size = (ft_strlen(s1) + ft_strlen(s2) + 1);
 	if (!s1 || !s2)
 		return (0);
-	p = malloc(size * sizeof(s1));
+	p = malloc(size * sizeof(char));
 	if (!p)
 		return (0);
 	ft_strlcpy(p, s1, size);
