@@ -1,34 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mparasku <mparasku@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/08 15:07:32 by mishamakura       #+#    #+#             */
-/*   Updated: 2022/12/13 18:56:28 by mparasku         ###   ########.fr       */
+/*   Created: 2022/12/13 19:14:08 by mparasku          #+#    #+#             */
+/*   Updated: 2022/12/13 19:14:29 by mparasku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s1, char const *set)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	size_t	i;
+	unsigned int	i;
+	char			*str;
 
-	if (!s1 || !set)
+	i = 0;
+	if (!s)
 		return (0);
-	while (*s1 && ft_strchr(set, *s1))
-		s1++;
-	i = ft_strlen(s1);
-	while (i && ft_strchr(set, s1[i]))
-		i--;
-	return (ft_substr(s1, 0, i + 1));
+	str = malloc((ft_strlen(s) + 1) * sizeof(char));
+	if (!str)
+		return (0);
+	while (s[i] != '\0')
+	{
+		str[i] = f(i, s[i]);
+		i++;
+	}
+	str[i] = 0;
+	return (str);
 }
 
-/* int main ()
+/* char	ft_up(unsigned int i, char c)
 {
-    char sen[] = "aaaHalloccca";
-    char set[] = "aaabba";
-    printf("%s\n", ft_strtrim(sen, set));
+	printf("%i\n", i);
+	if (c >= 'a' && c <= 'z')
+		c -= 32;
+	return (c);
+}
+
+int	main()
+{
+	printf("%s\n", ft_strmapi("hello", ft_up));
 } */
