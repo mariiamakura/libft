@@ -1,5 +1,7 @@
 {
 	"files.associations": {
-		"fcntl.h": "c"
+		"fcntl.h": "c",
+		"ctype.h": "c",
+		"stdlib.h": "c"
 	}
 }
