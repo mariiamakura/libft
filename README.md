@@ -2,7 +2,6 @@
 
 This project is about coding a C library and recode some standard functions.
 
-![Screenshot](IMG_6018.jpg)
 
 ## Libc functions
 1. [isalpha](https://github.com/mariiamakura/libft/blob/main/functions/ft_isalpha.c)      
@@ -57,3 +56,5 @@ This project is about coding a C library and recode some standard functions.
 7. [ft_lstclear](https://github.com/mariiamakura/libft/blob/main/functions/ft_lstclear.c)
 8. [ft_lstiter](https://github.com/mariiamakura/libft/blob/main/functions/ft_lstiter.c)
 9. ft_lstmap - not in this repo
+
+![Screenshot](IMG_6018.jpg)
