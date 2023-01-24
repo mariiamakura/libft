@@ -2,6 +2,8 @@
 
 This project is about coding a C library and recode some standard functions.
 
+![Screenshot](IMG_6018.jpg)
+
 ## Libc functions
 1. [isalpha](https://github.com/mariiamakura/libft/blob/main/functions/ft_isalpha.c)      
 2. [isdigit](https://github.com/mariiamakura/libft/blob/main/functions/ft_isdigit.c)      
