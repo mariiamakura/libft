@@ -3,8 +3,8 @@
 This project is about coding a C library and recode some standard functions.
 
 ## Libc functions
-1. [isalpha](the link) | [toupper](the link)
-2. [isdigit](the link)
+1. [isalpha](the link)      | [toupper](the link)
+2. [isdigit](the link)      | [tolower](the link)
 3. [isalnum](the link)
 4. [isascii](the link)
 5. [isprint](the link)
